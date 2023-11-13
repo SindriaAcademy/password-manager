@@ -30,4 +30,4 @@ Ricorda inoltre che le configurazioni dell utente (relative all'autenticazione) 
 
 ## Scrum Poker
 
-[https://www.scrumpoker-online.org/en/room/41435826/scrum-poker](https://www.scrumpoker-online.org/en/room/41435826/scrum-poker)
+[https://www.scrumpoker-online.org/en/room/71781264/scrum-poker](https://www.scrumpoker-online.org/en/room/71781264/scrum-poker)
