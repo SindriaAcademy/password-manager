@@ -6,9 +6,16 @@ CREDENTIALS_FILE_PATH = "app.yml"
 MAX_LOGIN_ATTEMPTS = 3
 
 def load_credentials(filename):
-    with open(filename, "r") as file:
-        credentials = list(yaml.load_all(file, Loader=yaml.FullLoader))
-    return credentials
+    try:
+        with open(filename, "r") as file:
+            credentials = list(yaml.load_all(file, Loader=yaml.FullLoader))
+        return credentials
+    except FileNotFoundError:
+        print(f"Errore: File '{filename}' non trovato.")
+        sys.exit()
+    except Exception as e:
+        print(f"Errore durante il caricamento delle credenziali: {e}")
+        sys.exit()
 
 def login(username, password, credentials):
     for user_info in credentials:
@@ -18,9 +25,8 @@ def login(username, password, credentials):
         if stored_username == username.strip() and stored_password == password.strip():
             return True
     return False
-
 def main():
-
+    pass
     credentials = load_credentials(CREDENTIALS_FILE_PATH)
     is_logged_in = False
 
@@ -64,5 +70,5 @@ def main():
                 print("Uscita dal programma.")
                 is_logged_in = False
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
