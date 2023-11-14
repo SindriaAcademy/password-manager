@@ -1,3 +1,7 @@
+
+
+
+
 import yaml
 import getpass
 import os
@@ -23,7 +27,7 @@ def view_specific_credential():
 
     print("Credenziale non trovata.")
 
-
+#Main
 def main():
     while True:
         print("\nMenu:")
