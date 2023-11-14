@@ -1,6 +1,7 @@
 import sys
 import yaml
-# Definisci costanti globali per i percorsi
+# Costanti Globali
+
 CREDENTIALS_FILE_PATH = "app.yml"
 MAX_LOGIN_ATTEMPTS = 3
 
@@ -19,7 +20,7 @@ def login(username, password, credentials):
     return False
 
 def main():
-    # Usa le costanti globali per i percorsi
+
     credentials = load_credentials(CREDENTIALS_FILE_PATH)
     is_logged_in = False
 
