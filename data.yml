@@ -1,0 +1,25 @@
+- id: 1
+  label: Spotify
+  note: ''
+  password: sYdario123
+  username: darioSpotify
+- id: 2
+  label: Netflix
+  note: password da cambiare
+  password: pass123
+  username: darioNetflix
+- id: 3
+  label: Amazon
+  note: ''
+  password: aNdario123
+  username: darioAmazon
+- id: 4
+  label: ale
+  note: jsjsjs
+  password: ksksks
+  username: hahaha
+- id: 5
+  label: hjss
+  note: sk
+  password: sk
+  username: sls
