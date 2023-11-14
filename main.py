@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
-import yaml
-def load_data(file_path):
-    try:
-        with open(file_path, "r") as data_file:
-            data = yaml.safe_load(data_file)
-    except FileNotFoundError:
-        print(f"Il file {file_path} non è stato trovato.")
-        data = []
-    return data
 
-def view_all_credentials(data):
+import os
+import yaml
+DATA_FILE = "data.yml"
+
+def load_data():
+    try:
+        with open(DATA_FILE, 'r') as file:
+            data = yaml.safe_load(file)
+            return data if data else []
+    except FileNotFoundError:
+        raise FileNotFoundError(f"Il file {DATA_FILE} non è stato trovato.")
+
+def view_all_credentials():
+    data = load_data()
     for credential in data:
         print("ID:", credential["id"])
         print("Label:", credential["label"])
@@ -20,11 +24,7 @@ def view_all_credentials(data):
 
 # Main
 def main():
-    file_path = "data.yml"
-    data = load_data(file_path)
-
-    if data:
-        view_all_credentials(data)
+    view_all_credentials()
 
 
 # Execute
