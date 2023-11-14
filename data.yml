@@ -1,0 +1,10 @@
+- id: 1
+  label: Spotify
+  note: ''
+  password: sYdario123
+  username: darioSpotify
+- id: 2
+  label: Amazon
+  note: ''
+  password: aNdario123
+  username: darioAmazon
