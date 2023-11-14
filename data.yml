@@ -1,0 +1,22 @@
+[
+  {
+    id: 1,
+    label: "Netflix",
+    username: "darioNetflix",
+    password: "pass123",
+    note: "password da cambiare",
+  },
+  {
+    id: 1,
+    label: "Netflix",
+    username: "darioNetflix",
+    password: "pass123",
+    note: "password da cambiare",
+  },{
+    id: 1,
+    label: "Netflix",
+    username: "darioNetflix",
+    password: "pass123",
+    note: "password da cambiare",
+  },
+]
