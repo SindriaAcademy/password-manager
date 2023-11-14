@@ -1,0 +1,17 @@
+- id: 1
+  label: "Spotify"
+  username: "fdafodw"
+  password: "moanodaw"
+  note: "palle"
+- id: 2
+  label: "Spotify2"
+  username: "fdafodw2"
+  password: "moanodaw2"
+  note: "palle2"
+- id: 3
+  label: "Spotify3"
+  username: "fdafodw3"
+  password: "moanodaw3"
+  note: "palle3"
+
+ 
