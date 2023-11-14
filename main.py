@@ -14,7 +14,6 @@ def load_credentials():
 def save_credentials(credentials):
     with open("data.yml", "w") as data_file:
         yaml.dump(credentials, data_file, default_flow_style=False)
-
 def edit_credential(credentials, credential_id):
     for credential in credentials:
         if credential["id"] == credential_id:
@@ -28,7 +27,7 @@ def edit_credential(credentials, credential_id):
             credential["password"] = password or credential["password"]
             credential["note"] = note
             save_credentials(credentials)
-            print("Credenziale modificata con successo.")
+            print("Credenziale modificata con successo")
             return
 
     print("Credenziale con ID {credential_id} non trovata")
