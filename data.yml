@@ -1,0 +1,17 @@
+#Comment: Mock Credenial data List
+#Note that - character represents the list
+- id: 1
+  label: "Spotify"
+  username: "darioSpotify"
+  password: "sYdario123"
+  note: ""
+- id: 2
+  label: "Netflix"
+  username: "darioNetflix"
+  password: "pass123"
+  note: "password da cambiare"
+- id: 3
+  label: "Amazon"
+  username: "darioAmazon"
+  password: "aNdario123"
+  note: ""
