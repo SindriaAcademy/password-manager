@@ -1,17 +1,25 @@
-#Comment: Mock Credenial data List
-#Note that - character represents the list
 - id: 1
-  label: "Spotify"
-  username: "darioSpotify"
-  password: "sYdario123"
-  note: ""
+  label: Spotify
+  note: ''
+  password: sYdario123
+  username: darioSpotify
 - id: 2
-  label: "Netflix"
-  username: "darioNetflix"
-  password: "pass123"
-  note: "password da cambiare"
+  label: Netflix
+  note: password da cambiare
+  password: pass123
+  username: darioNetflix
 - id: 3
-  label: "Amazon"
-  username: "darioAmazon"
-  password: "aNdario123"
-  note: ""
+  label: Amazon
+  note: ''
+  password: aNdario123
+  username: darioAmazon
+- id: 4
+  label: ale
+  note: jsjsjs
+  password: ksksks
+  username: hahaha
+- id: 5
+  label: hjss
+  note: sk
+  password: sk
+  username: sls
