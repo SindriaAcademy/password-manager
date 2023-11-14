@@ -6,23 +6,26 @@ def eliminate_credential(id_to_remove):
     with open('data.yml') as fileLoad:
         test_list: list
         test_list = yaml.safe_load(fileLoad)
-        test_list.remove(test_list[id_to_remove-1])
-        # print(test_list)
-        i = 0
-        for i in range(len(test_list)):
-            # print(test_list[i]["id"])
-            # print(i)
-            if test_list[i]["id"] != i+1:
-                test_list[i]["id"] = i+1
-        print(test_list)
-
-        with open("data.yml", "w") as fileRead:
-            documents = yaml.dump(test_list, fileRead)
+        if 0 <= id_to_remove < len(test_list):
+            test_list.remove(test_list[id_to_remove - 1])
+            i = 0
+            for i in range(len(test_list)):
+                if test_list[i]["id"] != i + 1:
+                    test_list[i]["id"] = i + 1
+            print(test_list)
+            with open("data.yml", "w") as fileRead:
+                documents = yaml.dump(test_list, fileRead)
+                return True
+        else:
+            return False
 
 
 # Main
+
+
 def main():
-    pass
+    print("ciao")
+    print("come")
 
 # Execute
 
