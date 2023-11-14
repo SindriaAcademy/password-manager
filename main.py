@@ -1,5 +1,5 @@
+#!/usr/bin/env python3
 import yaml
-
 def load_data(file_path):
     try:
         with open(file_path, "r") as data_file:
@@ -18,7 +18,7 @@ def view_all_credentials(data):
         print("Note:", credential["note"])
         print("-" * 20)
 
-
+# Main
 def main():
     file_path = "data.yml"
     data = load_data(file_path)
@@ -27,5 +27,6 @@ def main():
         view_all_credentials(data)
 
 
+# Execute
 if __name__ == "__main__":
     main()
