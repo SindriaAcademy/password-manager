@@ -25,5 +25,21 @@ def view_specific_credential():
 
 
 def main():
+    while True:
+        print("\nMenu:")
+        print("1. Visualizza una credenziale specifica")
+        print("0. Esci")
 
-    choice = input("Inserisci la tua scelta: ")
+        choice = input("Inserisci la tua scelta: ")
+
+        if choice == '1':
+            view_specific_credential()
+        elif choice == '0':
+            print("Arrivederci!")
+            break
+        else:
+            print("Scelta non valida. Riprova.")
+
+
+if __name__ == "__main__":
+    main()
