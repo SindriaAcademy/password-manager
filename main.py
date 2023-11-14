@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 import yaml
 
-# Main
-def main():
-
-    idToRemove = 2
+def eliminaCredenziale(idToRemove):
     with open('data.yml') as fileLoad:
         test_list: list
         test_list = yaml.safe_load(fileLoad)
@@ -22,8 +19,13 @@ def main():
             documents = yaml.dump(test_list, fileRead)
 
 
+# Main
+def main():
+    pass
 
 # Execute
+
+
 if __name__ == '__main__':
 
     main()
