@@ -1,0 +1,15 @@
+- id: 1
+  label: YouTube
+  note: password YouTube
+  password: parente
+  username: emanuele
+- id: 2
+  label: Netflix
+  note: password da cambiare
+  password: pass123
+  username: darioNetflix
+- id: 3
+  label: Amazon
+  note: ''
+  password: aNdario123
+  username: darioAmazon
