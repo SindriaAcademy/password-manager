@@ -1,16 +1,17 @@
 #!/usr/bin/env python3
 import yaml
 
-def eliminaCredenziale(idToRemove):
+
+def eliminate_credential(id_to_remove):
     with open('data.yml') as fileLoad:
         test_list: list
         test_list = yaml.safe_load(fileLoad)
-        test_list.remove(test_list[idToRemove-1])
-        #print(test_list)
+        test_list.remove(test_list[id_to_remove-1])
+        # print(test_list)
         i = 0
         for i in range(len(test_list)):
-            #print(test_list[i]["id"])
-            #print(i)
+            # print(test_list[i]["id"])
+            # print(i)
             if test_list[i]["id"] != i+1:
                 test_list[i]["id"] = i+1
         print(test_list)
