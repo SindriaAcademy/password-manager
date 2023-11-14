@@ -1,11 +1,7 @@
-
-
-
+#!/usr/bin/env python3
 
 import yaml
-import getpass
 import os
-
 
 DATA_FILE = "data.yml"
 
@@ -16,18 +12,26 @@ def load_data():
             return data
     else:
         return []
+
+def find_entity(data, field, value):
+    for entity in data:
+        if entity.get(field) == value:
+            return entity
+    raise ValueError("Entità non trovata")
+
 def view_specific_credential():
-    credential_id = int(input("Inserisci l'ID della credenziale da visualizzare: "))
-    data = load_data()
+    try:
+        credential_id = int(input("Inserisci l'ID della credenziale da visualizzare: "))
+        data = load_data()
 
-    for credential in data:
-        if credential['id'] == credential_id:
-            print(f"ID: {credential['id']}, Label: {credential['label']}, Username: {credential['username']}, Password: {credential['password']}, Note: {credential['note']}")
-            return
+        credential = find_entity(data, 'id', credential_id)
+        print(f"ID: {credential['id']}, Label: {credential['label']}, Username: {credential['username']}, Password: {credential['password']}, Note: {credential['note']}")
+    except ValueError as ve:
+        print(ve)
+    except Exception as e:
+        print(f"Errore sconosciuto durante la visualizzazione della credenziale: {e}")
 
-    print("Credenziale non trovata.")
-
-#Main
+# Main
 def main():
     while True:
         print("\nMenu:")
@@ -44,6 +48,7 @@ def main():
         else:
             print("Scelta non valida. Riprova.")
 
+# Execute
 
 if __name__ == "__main__":
     main()
