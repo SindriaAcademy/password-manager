@@ -26,3 +26,8 @@ Ricorda inoltre che le configurazioni dell utente (relative all'autenticazione) 
 - fullname
 - username
 - password
+
+
+## Scrum Poker
+
+[https://www.scrumpoker-online.org/en/room/71781264/scrum-poker](https://www.scrumpoker-online.org/en/room/71781264/scrum-poker)
